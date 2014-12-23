@@ -21,9 +21,9 @@ group :development, :test do
   gem 'spring'
 end
 
+gem 'launchkey'
 
 gem "paperclip", "~> 3.0"
-gem "devise"
 gem "omniauth"
 gem "twitter"
 gem "instagram"

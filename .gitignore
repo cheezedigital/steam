@@ -11,3 +11,7 @@
 /log/*.log
 /tmp
 /DS.Store
+/launchkey.rb
+/launchkey_keypair.pem
+.launchkey.rb
+.launchkey_keypair.pem
