@@ -1,0 +1,2 @@
+module YourSpace::UsersHelper
+end

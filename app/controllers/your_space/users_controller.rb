@@ -1,0 +1,34 @@
+class YourSpace::UsersController < ApplicationController
+
+  def new
+    @title = YourSpace
+  end
+
+  def edit
+    @title = YourSpace
+    @user = User.find(params[:id])
+  end
+
+  def update
+    name = params[:user][:name]
+
+    if name.blank?
+      flash[:notice] = "Name can not be blank dawg!"
+      redirect_to :back
+    else
+      User.find(params[:id].update_attributes(params[:user])
+
+      redirect_to :action => :show
+    end
+  end
+
+  def index
+    @title = YourSpace
+    @users = User.limit(100).order('created_at DESC')
+  end
+
+  def show
+    @title = YourSpace
+    @user = User.find(params[:id])
+  end
+end
