@@ -22,6 +22,20 @@ class WordCloudController < ApplicationController
 
         scale = (word.count - min_frequency).to_f / demon
         size = min_size + ((max_size - min_size) * scale).round
-        @cloud
+        @cloud_words[word.word_text] = size
+      end
+    end
+  end
+  def create
+    input = params[:word_cloud_word][:word_text]
+    if input && !input.blank? && input.lenght <= 225
+      words = input.gsub(/\W+/, ' ').downcase.split(' ')
+
+      words.reverse_each do |word|
+        word = WordCloudWord.find_by_word_text(word) || WordCloudWord.new(:word_text => word, :count => 0)
+        word.increment!(:count)
+      end
+    end
+    redirect_to :action => :index
   end
 end
