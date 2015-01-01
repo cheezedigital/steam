@@ -8,4 +8,7 @@ Rails.application.routes.draw do
     resources :users
   end
 
+  namespace :word_cloud do
+    resources :words, :only => [:index, :create]
+  end
 end
