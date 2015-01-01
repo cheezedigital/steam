@@ -13,4 +13,75 @@ body.word_cloud_words_index {
     padding: 10px 20px
     margin-bottom: 30px;
   }
+
+  #links_container {
+    float: right;
+  }
+
+  #links_container a {
+    font-size: 11px;
+    line-height: 20px;
+    text-decoration: none;
+    color: $header_links_color;
+    margin-left: 15px;
+  }
+
+  #links_container a:visited {
+    color: $header_links_color;
+  }
+
+  #links_container a:hover {
+    color: $text_color;
+  }
+
+  .clear {
+    clear: both;
+  }
+
+  #cloud_container {
+    width: 800px;
+    margin: auto;
+    padding-bottom: 130px;
+  }
+  .cloud_word {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 3px;
+    max-width: 800px;
+    white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+  }
+
+  #form_container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 20px;
+    background-color: rgba(255,255,255,0.95);
+
+      .input_warning {
+        font-size: 11px;
+        color: red;
+        line-height: 15px;
+      }
+
+      #text_field {
+        width: 500px;
+        padding: 5px;
+        font-family: $main_font;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: $text_color;
+      }
+
+      .btn {
+        border: none;
+                display: inline-block;
+                vertical-align: top;
+                
+      }
+
+  }
 }
