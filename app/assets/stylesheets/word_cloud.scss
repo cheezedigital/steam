@@ -1,0 +1,16 @@
+body.word_cloud_words_index {
+    $text_color: #282d33;
+    $main_font: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    $header_links_color: #ccc;
+
+  font-family: $main_font;
+  text-align: center;
+  overflow-y: scroll;
+  color: $text_color;
+  letter-spacing: 1px;
+
+  header {
+    padding: 10px 20px
+    margin-bottom: 30px;
+  }
+}
