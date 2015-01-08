@@ -11,4 +11,9 @@ Rails.application.routes.draw do
   namespace :word_cloud do
     resources :words, :only => [:index, :create]
   end
+
+  namespace :word_clock do
+    resources :page, :only => [:index]
+  end
+  
 end

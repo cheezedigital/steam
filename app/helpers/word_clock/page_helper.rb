@@ -1,0 +1,2 @@
+module WordClock::PageHelper
+end
