@@ -16,7 +16,7 @@ class YourSpace::UsersController < ApplicationController
       flash[:notice] = "Name can not be blank dawg!"
       redirect_to :back
     else
-      User.find(params[:id].update_attributes(params[:user])
+      User.find(params[:id]).update_attributes(params[:user])
       # redirect_to :action 'show'
       redirect_to :action => :show
       # render :action => 'show'
