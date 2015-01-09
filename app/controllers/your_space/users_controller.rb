@@ -17,8 +17,9 @@ class YourSpace::UsersController < ApplicationController
       redirect_to :back
     else
       User.find(params[:id].update_attributes(params[:user])
-
+      # redirect_to :action 'show'
       redirect_to :action => :show
+      # render :action => 'show'
     end
   end
 
