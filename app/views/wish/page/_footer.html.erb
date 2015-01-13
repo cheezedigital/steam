@@ -1,7 +1,7 @@
 <footer>
   <div id="links_container">
     <a href="/index.html" id="home">Home</a>
-    <a href="http://www.justinveirs.me/">Cheeze</a>
+    <a href="http://www.justinveirs.me/" target="_blank" id="cheeze">Cheeze</a>
 
     <% if user_singed_in? %>
       <%= link_to "Profile", your_space_user_path(current_user.id) %>
