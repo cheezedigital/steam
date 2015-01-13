@@ -15,5 +15,9 @@ Rails.application.routes.draw do
   namespace :word_clock do
     resources :page, :only => [:index]
   end
+
+  namespace :wish do
+    resrouces :page, :only => [:index]
+  end
   
 end

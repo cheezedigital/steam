@@ -1,0 +1,2 @@
+module Wish::PageHelper
+end
