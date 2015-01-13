@@ -37,6 +37,23 @@ body.wish_page_index {
   }
 
   #links_container a {
-    
+    font-size: 11px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
   }
+
+  #links_container a:visited {
+    color: #aaa;
+  }
+
+  #links_container a:hover {
+    color: #333;
+  }
+
+  .clear {
+    clear: both;
+  }
+  
 }
