@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   end
 
   namespace :wish do
-    resrouces :page, :only => [:index]
+    resources :page, :only => [:index]
   end
-  
+
 end
