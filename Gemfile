@@ -20,8 +20,9 @@ group :development, :test do
   gem 'spring'
 end
 
-gem 'launchkey'
+# gem 'launchkey'
 
+gem 'devise'
 gem "paperclip", "~> 3.0"
 gem "omniauth"
 gem "twitter"
