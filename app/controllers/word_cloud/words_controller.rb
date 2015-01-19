@@ -1,4 +1,4 @@
-class WordCloudController < ApplicationController
+class WordCloud::WordsController < ApplicationController
   def index
     @title = 'Word Cloud'
     @new_words = WordCloudWord.new

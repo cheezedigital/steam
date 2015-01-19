@@ -1,4 +1,5 @@
 class YourSpace::UsersController < ApplicationController
+  before_filter :authenticate_user!, :only => [:edit, :new, :update]
 
   def new
     @title = YourSpace
