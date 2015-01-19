@@ -12,7 +12,7 @@
 </div>
 
 <ul id="content_container">
- <% users.each do |user| %>
+ <% @users.each do |user| %>
   <% unless user.name.blank? %>
     <li class="user_container">
       <%= link_to user_space_user_path(user.id) do %>
