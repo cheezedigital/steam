@@ -38,4 +38,8 @@ class WordCloud::WordsController < ApplicationController
     end
     redirect_to :action => :index
   end
+
+  # def wordcloud_params
+  #   params.require(:object_name).permit(:count, :word_text)
+  # end
 end
