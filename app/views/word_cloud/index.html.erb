@@ -1,9 +1,9 @@
 <%= render 'word_cloud/words/header' %>
 
 <div id="cloud_container">
-  <% if @clouds_words %>
+  <% if @cloud_words %>
     <% @cloud_words.each_pair do |word, size| %>
-      <p class="cloud_word" style="font-size: <% size %>px"><% word %></p>
+      <p class="cloud_word" style="font-size: <% size %>px"><%= word %></p>
     <% end %>
   <% end %>
 </div>
@@ -14,8 +14,8 @@
   <div class="input_warning" style="opacity: 0">Your text is too long</div>
 
   <%= form_for @new_words do |f| %>
-    <% f.text_field :word_text, :id => 'text_field', maxlength => 255 %>
-    <% f.submit :value => 'Submit', :class => 'btn' %>
+    <% f.text_field :word_text, :id => 'text_field', :maxlength => 255 %>
+    <% f.submit :value => 'Submit', :class => "btn" %>
   <% end %>
 </div>
 <div class="modal" style="display: none">
