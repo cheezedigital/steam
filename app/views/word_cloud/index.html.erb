@@ -3,7 +3,7 @@
 <div id="cloud_container">
   <% if @cloud_words %>
     <% @cloud_words.each_pair do |word, size| %>
-      <p class="cloud_word" style="font-size: <% size %>px"><%= word %></p>
+      <p class="cloud_word" style="font-size: <%= size %>px"><%= word %></p>
     <% end %>
   <% end %>
 </div>

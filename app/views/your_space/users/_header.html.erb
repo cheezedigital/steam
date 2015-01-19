@@ -2,7 +2,7 @@
   <div id="logo"><%= link_to "Your Space", your_space_users_path %></div>
 
   <div id="links_container">
-    <a href="/index.html" id="home">Home</a>
+    <%= link_to "Home", root_path %>
     <a href="http://www.justinveirs.me/">Cheeze</a>
 
     <% if user_signed_in? %>
